@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #1e1c1c;
+    
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.titulo{
+    font-size: 30px;
+    color: white;
+    margin-bottom: 20px;
+    text-align: center;
+}
+form{ 
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.input{
+    width: 300px;
+    padding: 5px 8px;
+    border: 2px solid rgba(0, 0, 0, .1);
+    font-size: 14px;
+}
+.button{
+    padding: 5px 8px;
+    background-color: #2e7bce;
+    color: white;
+    cursor: pointer;
+}
+.button:hover{
+    background-color: #0056b3;   
+}
+
+.movie_container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+.movie_card{
+    padding: 15px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 3px rgba(251, 251, 251, 0.823);
+    
+}
+.foto_peli{
+   width: 100%;
+   margin-bottom: 20px;
+}
+.title{
+    margin-bottom: 10px;
+}
+.subtitle{
+    margin-bottom: 10px;
+}
+.parrafo{
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+.negrita{
+    font-weight: bolder;
+}
+@media (max-width: 500px){
+    .movie_container{
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+    .container{
+        max-width: 300px;
+    }
+    .titulo{
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+    .input{
+        font-size: 12px;
+    }
+    .foto_peli{
+        margin-bottom: 10px;
+     }
+     .title{
+         margin-bottom: 5px;
+     }
+     .subtitle{
+         margin-bottom: 5px;
+     }
+     .parrafo{
+         margin-bottom: 5px;
+         font-size: 16px;
+     }
+
+}
